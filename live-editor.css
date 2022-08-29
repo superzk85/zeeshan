@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.html-code h1,.css-code h1,.js-code h1{ 
+    padding-left: 70px;
+    font-size: 20px;
+    padding-top:16px;
+    color:#818490;
+    width: 80px;
+    position: relative;
+    top:-10%;
+}
+.red-box{
+    background-color:red;
+    width:20px;
+    text-align: center;
+    margin:13px 44px;
+    border-radius:5px;
+}
+.blue-box{
+    background-color:#0ebeff;
+    width:20px;
+    text-align: center;
+    padding:0px 0px;
+    margin:13px 44px;
+    border-radius:5px;
+}
+.yellow-box{
+    background-color:yellow;
+    width:20px;
+    text-align: center;
+    padding:0px 0px;
+    margin:13px 44px;
+    border-radius:5px;
+}
+textarea{
+    height: 400px;
+	width: 390px;
+    color: #fff;
+    background-color: #1d1e22;
+    resize: none;
+    position: relative;
+    top:-9%;
+    left:6%;
+}
+.js-code textarea{
+    height: 400px;
+	width: 390px;
+    color: #fff;
+    background-color: #1d1e22;
+    resize: none;
+    margin-right:50px;
+}
+.editor{
+    background-color: #060606;
+    display: grid;
+    height: 470px;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    gap: 10px;
+}
+#output{
+height: 45vh;
+width:300%;
+border: none;
+}

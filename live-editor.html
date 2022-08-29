@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="live-editor.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="editor">
+        <div class="html-code">
+           <div class="red-box">/</div><h1><span>HTML</h1></span>
+            <textarea id="html-code"></textarea>
+        </div>
+
+        <div class="css-code">
+            <div class="blue-box">*</div><h1>CSS</h1>
+            <textarea id="css-code"></textarea>
+        </div>
+        <div class="js-code">
+            <div class="yellow-box">()</div><h1>JS</h1>
+            <textarea id="js-code"></textarea>
+        </div>
+        <iframe id="output"></iframe>
+    </div>
+
+<script type="text/javascript">
+function run() {
+let htmlCode = document.querySelector(".editor #html-code").value;
+let cssCode  = "<style>"+document.querySelector(".editor #css-code").value+"</style>";
+let jsCode  = document.querySelector(".editor #js-code").value;
+
+let output = document.querySelector(".editor #output");
+
+output.contentDocument.body.innerHTML = htmlCode+cssCode;
+output.contentWindow.eval(jsCode);
+}
+document.querySelector(".editor #html-code").addEventListener("keyup",run);
+document.querySelector(".editor #css-code").addEventListener("keyup",run);
+document.querySelector(".editor #js-code").addEventListener("keyup",run);
+</script>
+</body>
+</html>

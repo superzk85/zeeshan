@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+width:20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img{
+width:33%;
+border:3px solid #fff;
+border-radius:50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+.nav-list{
+width:50%;
+display: flex;
+align-items: center;
+}
+.nav-list li{
+list-style:none;
+padding:26px 30px;
+}
+.nav-list li a{
+text-decoration: none;
+color: #fff;
+}
+.nav-list li a:hover{
+color: gray;
+    }
+.rightnav{
+    text-align: right;
+    width:50%;
+}
+#search{
+    padding:5px;
+    font-size:17px;
+    border:2px solid gray;
+    border-radius:9px;
+}
+.background{
+    background:rgba(0,0,0,0.7) url('../image/back.jpg');
+    background-size: cover;
+    background-blend-mode:darken;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:50%;
+    margin: auto;
+    height:80%;
+}
+.firstSection{
+    height:100vh;
+}
+.firstHalf{
+width:80%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.secondhalf{
+    width:30%;
+}
+.secondhalf img{
+    width:70%;
+    border:4px solid white;
+    border-radius:150px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size:30px;
+}
+.text-small{
+    font-size:13px;
+}
+.btn{
+    padding:8px 20px;
+    margin:7px 3px;
+    border:2px solid white;
+    border-radius:8px;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-sm{
+padding:6px 10px;
+vertical-align:middle;
+}
+.section{
+    height:500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:80%;
+    margin: auto;
+    font-family: 'ubuntu',sans-serif;
+}
+.section-left{
+ flex-direction:row-reverse;
+ margin: 0px 200px;
+}
+.paras{
+    padding:0px 65px;
+}
